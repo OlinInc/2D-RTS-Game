@@ -10,6 +10,7 @@ var max_health
 var health
 var building_cost
 var progress_bar
+signal get_resource
 
 func get_collision_shape():
 	return $Collision_Shape.shape
@@ -57,6 +58,7 @@ func _select():
 
 
 func _ready():
+	$Timer.start()
 	health = 0
 	sprite.set_region(false)
 	set_collision_mask(0)
@@ -67,7 +69,6 @@ func _ready():
 	yield(get_tree().create_timer(0.01), "timeout")
 	set_process(true)
 	yield(get_tree().create_timer(0.01), "timeout")
-	
 	visible = true
 	
 	
@@ -108,3 +109,9 @@ func _process(delta):
 
 
 
+
+
+func _on_Timer_timeout():
+	if done_built and building_type == "house":
+		get_parent().HUD.gold += 20
+	pass # Replace with function body.

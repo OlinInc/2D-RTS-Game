@@ -5,6 +5,7 @@ var icons = {"house":"res://Textures/House.png","town_center":"res://Textures/Li
 var current_icon
 
 
+
 func new(type):
 	if type in icons:
 		set_button_icon(load(icons[type]))

@@ -4,7 +4,6 @@
 [ext_resource path="res://Assets/Resource_Values.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/Entity_GUI.tscn" type="PackedScene" id=3]
 
-
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource( 1 )
 
@@ -13,5 +12,5 @@ margin_right = 121.0
 margin_bottom = 103.0
 
 [node name="Entity_GUI" parent="." instance=ExtResource( 3 )]
-margin_left = 1060.0
+margin_left = 1190.0
 margin_top = 488.0

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Textures/waves-sea-top-view-sea-footage-088436597_prevstill.jpeg" type="Texture" id=1]
+[ext_resource path="res://Textures/Texture Atlas 1/Water1.png" type="Texture" id=1]
+[ext_resource path="res://Textures/Texture Atlas 1/Dirt1.png" type="Texture" id=2]
 
 [node name="Map" type="Node2D"]
 
@@ -13,10 +14,6 @@ mouse_filter = 2
 texture = ExtResource( 1 )
 stretch_mode = 2
 
-[node name="Polygon2D" type="Polygon2D" parent="."]
-color = Color( 0.196078, 0.254902, 0.109804, 1 )
-polygon = PoolVector2Array( -1.02124, 0.526741, -84.5385, 65.9584, -177.29, 195.81, -243.541, 513.814, -209.09, 937.82, -44.7192, 1355.25, 244.371, 1701.13, 662.518, 1778.56, 1111.64, 1628.85, 1292.32, 1381.06, 1498.81, 875.156, 1524.63, 580.904, 1385.24, 173.081, 1173.59, -100.522, 848.362, -203.768, 430.214, -219.255 )
-
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
@@ -24,3 +21,7 @@ position = Vector2( 4.13934, -8.5285 )
 scale = Vector2( 0.997971, 1.00356 )
 build_mode = 1
 polygon = PoolVector2Array( 426.435, -192.26, 840.261, -181.972, 1171.32, -73.9477, 1393.75, 188.396, 1512.73, 558.764, 1502.38, 872.548, 1285.12, 1366.37, 1129.94, 1603, 685.076, 1783.04, 271.251, 1716.16, -28.7724, 1376.66, -199.475, 959.996, -246.031, 517.612, -168.438, 193.54, -80.5005, 59.7963, 472.991, -248.844, 509.2, -830.116, -1213.35, -830.116, -1244.38, 2297.44, 2676.61, 2307.72, 2676.61, -819.828, 560.928, -819.828, 535.064, -243.7 )
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+texture = ExtResource( 2 )
+polygon = PoolVector2Array( -19.9243, 18.8013, -129.111, 120.586, -210.539, 361.167, -243.85, 659.118, -181.642, 969.666, -24.2531, 1406.59, 287.848, 1712.2, 693.891, 1780.51, 1153.06, 1594.57, 1376.95, 1154.37, 1513.57, 843.197, 1498.39, 547.203, 1388.34, 182.903, 1156.86, -90.3218, 853.272, -188.986, 375.128, -211.755 )

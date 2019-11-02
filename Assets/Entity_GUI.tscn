@@ -12,11 +12,11 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -233.0
+margin_left = -103.0
 margin_top = -670.0
 margin_right = 1.0
-margin_bottom = 50.0
+margin_bottom = -24.0
 
 [node name="ItemList" type="VBoxContainer" parent="MarginContainer"]
-margin_right = 234.0
-margin_bottom = 720.0
+margin_right = 104.0
+margin_bottom = 646.0
