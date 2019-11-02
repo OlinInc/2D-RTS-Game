@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/3-Audio 0001 [2019-10-20 171051].wav-3cd35d5c8de70042c078538e81524c2c.sample"
+
+[deps]
+
+source_file="res://Sounds/3-Audio 0001 [2019-10-20 171051].wav"
+dest_files=[ "res://.import/3-Audio 0001 [2019-10-20 171051].wav-3cd35d5c8de70042c078538e81524c2c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

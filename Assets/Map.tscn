@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Textures/waves-sea-top-view-sea-footage-088436597_prevstill.jpeg" type="Texture" id=1]
+
+[node name="Map" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -1207.0
+margin_top = -834.0
+margin_right = 2684.0
+margin_bottom = 2318.0
+mouse_filter = 2
+texture = ExtResource( 1 )
+stretch_mode = 2
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color( 0.196078, 0.254902, 0.109804, 1 )
+polygon = PoolVector2Array( -1.02124, 0.526741, -84.5385, 65.9584, -177.29, 195.81, -243.541, 513.814, -209.09, 937.82, -44.7192, 1355.25, 244.371, 1701.13, 662.518, 1778.56, 1111.64, 1628.85, 1292.32, 1381.06, 1498.81, 875.156, 1524.63, 580.904, 1385.24, 173.081, 1173.59, -100.522, 848.362, -203.768, 430.214, -219.255 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( 4.13934, -8.5285 )
+scale = Vector2( 0.997971, 1.00356 )
+build_mode = 1
+polygon = PoolVector2Array( 426.435, -192.26, 840.261, -181.972, 1171.32, -73.9477, 1393.75, 188.396, 1512.73, 558.764, 1502.38, 872.548, 1285.12, 1366.37, 1129.94, 1603, 685.076, 1783.04, 271.251, 1716.16, -28.7724, 1376.66, -199.475, 959.996, -246.031, 517.612, -168.438, 193.54, -80.5005, 59.7963, 472.991, -248.844, 509.2, -830.116, -1213.35, -830.116, -1244.38, 2297.44, 2676.61, 2307.72, 2676.61, -819.828, 560.928, -819.828, 535.064, -243.7 )

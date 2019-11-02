@@ -1,0 +1,113 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://src/World.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Map.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/Camera Base.gd" type="Script" id=3]
+[ext_resource path="res://Assets/HUD.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Textures/light.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Tree.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Rock.tscn" type="PackedScene" id=7]
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Map" parent="." instance=ExtResource( 2 )]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0.27451, 0.27451, 0.27451, 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.5, 0.5 )
+process_mode = 0
+limit_left = -2000
+limit_top = -2000
+limit_right = 2000
+limit_bottom = 2000
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
+drag_margin_left = 0.0
+drag_margin_top = 0.0
+drag_margin_right = 0.0
+drag_margin_bottom = 0.0
+script = ExtResource( 3 )
+
+[node name="HUD" parent="." instance=ExtResource( 4 )]
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( 641.702, 700 )
+z_index = 5
+texture = ExtResource( 5 )
+texture_scale = 2.53
+
+[node name="Trees" type="YSort" parent="."]
+editor/display_folded = true
+
+[node name="Tree" parent="Trees" instance=ExtResource( 6 )]
+position = Vector2( 950.418, 149.147 )
+
+[node name="Tree2" parent="Trees" instance=ExtResource( 6 )]
+position = Vector2( 647.363, 111.067 )
+
+[node name="Tree3" parent="Trees" instance=ExtResource( 6 )]
+position = Vector2( 452.202, 57.1203 )
+
+[node name="Tree4" parent="Trees" instance=ExtResource( 6 )]
+position = Vector2( 515.669, 111.067 )
+
+[node name="Tree5" parent="Trees" instance=ExtResource( 6 )]
+position = Vector2( 558.509, 42.8402 )
+
+[node name="Tree6" parent="Trees" instance=ExtResource( 6 )]
+position = Vector2( 574.376, 92.0271 )
+
+[node name="Tree7" parent="Trees" instance=ExtResource( 6 )]
+position = Vector2( 458.549, 134.867 )
+
+[node name="Tree8" parent="Trees" instance=ExtResource( 6 )]
+position = Vector2( 422.055, -7.93335 )
+
+[node name="Tree9" parent="Trees" instance=ExtResource( 6 )]
+position = Vector2( 59.0278, 533.183 )
+
+[node name="Tree10" parent="Trees" instance=ExtResource( 6 )]
+position = Vector2( 168.621, 505.785 )
+
+[node name="Tree11" parent="Trees" instance=ExtResource( 6 )]
+position = Vector2( 243.966, 564.006 )
+
+[node name="Tree12" parent="Trees" instance=ExtResource( 6 )]
+position = Vector2( 76.1517, 478.386 )
+
+[node name="Tree13" parent="Trees" instance=ExtResource( 6 )]
+position = Vector2( -50.5654, 396.192 )
+
+[node name="Rocks" type="YSort" parent="."]
+editor/display_folded = true
+
+[node name="Rock" parent="Rocks" instance=ExtResource( 7 )]
+position = Vector2( 45.0507, 214.653 )
+
+[node name="Rock2" parent="Rocks" instance=ExtResource( 7 )]
+position = Vector2( 90.9924, 230.506 )
+
+[node name="Rock3" parent="Rocks" instance=ExtResource( 7 )]
+position = Vector2( 36.9623, 253.477 )
+
+[node name="Rock4" parent="Rocks" instance=ExtResource( 7 )]
+position = Vector2( 23.0504, 230.506 )
+
+[node name="Rock5" parent="Rocks" instance=ExtResource( 7 )]
+position = Vector2( 47.6389, 268.683 )
+
+[node name="Rock6" parent="Rocks" instance=ExtResource( 7 )]
+position = Vector2( 34.6976, 267.389 )
+
+[node name="Rock7" parent="Rocks" instance=ExtResource( 7 )]
+position = Vector2( 28.5504, 262.536 )
+
+[node name="Rock8" parent="Rocks" instance=ExtResource( 7 )]
+position = Vector2( 27.9034, 247.977 )
+
+[node name="Rock9" parent="Rocks" instance=ExtResource( 7 )]
+position = Vector2( 78.6981, 225.006 )
